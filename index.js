@@ -3,6 +3,8 @@ const app = express();
 
 app.use((req, res) => {
   console.log("Server Created");
+  res.header("Content-Type", "text-html");
+  res.statusCode = 200;
   res.end("Hello Nabaraj Dahal");
 });
 
